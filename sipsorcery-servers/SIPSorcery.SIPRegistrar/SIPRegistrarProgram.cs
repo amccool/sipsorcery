@@ -44,7 +44,9 @@ namespace SIPSorcery.SIPRegistrar {
                 SIPAssetPersistor<SIPRegistrarBinding> sipRegistrarBindingPersistor = SIPAssetPersistorFactory<SIPRegistrarBinding>.CreateSIPAssetPersistor(m_sipRegistrarStorageType, m_sipRegistrarStorageConnStr, m_sipRegistrarBindingsXMLFilename);
                 SIPAssetPersistor<Customer> customerPersistor = SIPAssetPersistorFactory<Customer>.CreateSIPAssetPersistor(m_sipRegistrarStorageType, m_sipRegistrarStorageConnStr, m_customersXMLFilename);
 
-                SIPRegistrarDaemon daemon = new SIPRegistrarDaemon(sipDomainManager.GetDomain, sipAccountsPersistor.Get, sipRegistrarBindingPersistor, SIPRequestAuthenticator.AuthenticateSIPRequest, customerPersistor);
+                SIPRegistrarDaemon daemon = new SIPRegistrarDaemon(sipDomainManager.GetDomain,
+                    sipAccountsPersistor.Get,
+                    sipRegistrarBindingPersistor, SIPRequestAuthenticator.AuthenticateSIPRequest, customerPersistor);
 
                 if (args != null && args.Length == 1 && args[0].StartsWith("-c")) {
                     Console.WriteLine("SIP Registrar starting");

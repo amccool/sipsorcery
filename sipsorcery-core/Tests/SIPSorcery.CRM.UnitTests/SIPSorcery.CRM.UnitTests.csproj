@@ -179,12 +179,6 @@
     <Compile Include="ThirtySevenSignalsPersonRequestUnitTest.cs" />
     <Compile Include="ThirtySevenSignalsPersonUnitTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\SIPSorcery.CRM\SIPSorcery.CRM.csproj">
-      <Project>{F951789F-1ABB-42E8-BB51-F028DC4824EF}</Project>
-      <Name>SIPSorcery.CRM</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

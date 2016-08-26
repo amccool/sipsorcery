@@ -58,7 +58,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SIPSorcery.AppServer.DialPlan, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -72,29 +72,9 @@
     <Reference Include="SIPSorcery.Entities">
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Entities.dll</HintPath>
     </Reference>
-    <Reference Include="SIPSorcery.Net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Persistence.dll</HintPath>
-    </Reference>
     <Reference Include="SIPSorcery.Servers.Cores, Version=1.0.4056.43011, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Servers.Cores.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.App, Version=0.2.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.App.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.Core, Version=0.2.0.37520, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.Sys, Version=1.0.0.40823, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Sys.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorcery.Web.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -164,6 +144,24 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\sipsorcery-core\SIPSorcery.Net\SIPSorcery.Net.csproj">
+      <Project>{55898587-8456-40d4-bb88-c9fc8bd6ba9c}</Project>
+      <Name>SIPSorcery.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sipsorcery-core\SIPSorcery.Persistence\SIPSorcery.Persistence.csproj">
+      <Project>{7194705f-5564-4040-bc8a-8fad806f5408}</Project>
+      <Name>SIPSorcery.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sipsorcery-core\SIPSorcery.SIP.Core\SIPSorcery.SIP.Core.csproj">
+      <Project>{01d01bc6-231f-4fd6-badf-51c509ab495f}</Project>
+      <Name>SIPSorcery.SIP.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sipsorcery-core\SIPSorcery.Sys\SIPSorcery.Sys.csproj">
+      <Project>{6d8dbb7d-8937-4cc4-9703-561f776f9dbd}</Project>
+      <Name>SIPSorcery.Sys</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -53,29 +53,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SIPSorcery.Persistence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Persistence.dll</HintPath>
-    </Reference>
     <Reference Include="SIPSorcery.Servers.Cores, Version=1.0.3611.4319, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Servers.Cores.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.App, Version=0.2.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.App.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.Core, Version=0.2.0.17031, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.Sys, Version=1.0.0.17024, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Sys.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorcery.Web.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -110,7 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

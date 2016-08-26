@@ -56,27 +56,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="SIPSorcery.CRM">
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.CRM.dll</HintPath>
     </Reference>
-    <Reference Include="SIPSorcery.Persistence">
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Persistence.dll</HintPath>
-    </Reference>
     <Reference Include="SIPSorcery.Servers.Cores">
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Servers.Cores.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.App">
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.App.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.SIP.Core">
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.SIP.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="SIPSorcery.Sys">
-      <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Sys.dll</HintPath>
     </Reference>
     <Reference Include="SIPSorcery.Web.Services">
       <HintPath>..\..\sipsorcery-core\Build\SIPSorcery.Web.Services.dll</HintPath>
@@ -106,7 +90,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
